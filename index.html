@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Самая крутая верстка на диком Западе 😍</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Самая крутая верстка на диком Западе" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Aion" />
+          </div>
+          <div class="menu">
+            <span><a href="https://google.com">Home</a></span>
+            <span><a href="https://google.com">Our works</a></span>
+            <span><a href="https://google.com">Our clients</a></span>
+            <span><a href="https://google.com">Contacts</a></span>
+          </div>
+        </div>
+        <div class="header-text">
+          <h1 class="js-change-text">Hello!</h1>
+          <p>We are creative agency</p>
+          <button onclick="clickMe()">Поменять текст</button>
+        </div>
+      </div>
+    </div>
+    <div class="works">
+      <div class="container">
+        <h2 class="content-title">Our works</h2>
+        <ul class="works-list">
+          <div class="row">
+            <li class="col col-4">
+              <img src="./images/site-1.png" alt=""> 
+              <h3>Work 1</h3>
+              <span>It is a long established fact t
+                hat a reader</span>
+            </li>
+            <li class="col col-4">
+              <img src="./images/site-2.png" alt=""> 
+              <h3>Work 2</h3>
+              <span>Various versions have evolved
+                over the years</span>
+            </li>
+            <li class="col col-4">
+              <img src="./images/site-3.png" alt=""> 
+              <h3>Work 3</h3>
+              <span>Many desktop publishing
+                packages and web page</span>
+            </li>
+          </div>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clients">
+      <div class="container">
+        <h2 class="content-title">Our clients</h2>
+        <ul class="clients-list row">
+          <div class="row">
+            <li class="col col-3">
+              <img src="./images/logo-1.png" alt=""> 
+            </li>
+            <li class="col col-3">
+              <img src="./images/logo-2.png" alt=""> 
+            </li>
+            <li class="col col-3">
+              <img src="./images/logo-3.png" alt=""> 
+            </li>
+            <li class="col col-3">
+              <img src="./images/logo-4.png" alt=""> 
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Aion" />
+          </div>
+          <div class="menu">
+            <span><a href="https://google.com">Home</a></span>
+            <span><a href="https://google.com">Our works</a></span>
+            <span><a href="https://google.com">Our clients</a></span>
+            <span><a href="https://google.com">Contacts</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const clickMe = () => {
+        let element = document.querySelector('.js-change-text');
+        if(element.innerHTML === 'Привет!') {
+          element.innerHTML = 'Hello!';
+        } else {
+          element.innerHTML = 'Привет!';
+        }
+      };
+    </script>
+  </body>
+</html>
